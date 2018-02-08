@@ -1,0 +1,29 @@
+//switch实现
+#include <stdio.h>
+int main( ) { 
+    int year;
+    float money,rate,total; /* 本金 月利率 本利合计*/
+    printf("Input money and year =?");
+    scanf("%f  %d", &money, &year);/* 输入本金和年 */
+    switch(year)
+    {
+    case 1:
+        rate=0.0032;  /* 根据年限定利率 */
+        break;
+    case 2:
+        rate=0.0041;
+        break;
+    case 3:
+        rate=0.005;
+        break;
+    case 5:
+        rate=0.0055;
+        break;
+    case 8:
+        rate=0.0065;
+        break;
+    default:
+        rate=0.0;
+    }
+    total = money + money * rate *12 * year;
+    printf(" Total = %.2f\n", total);

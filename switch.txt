@@ -1,3 +1,4 @@
+#include <stdio.h>
 void main()
 {   int day,month,year,sum;
     printf("please input year,month,day\n");
@@ -22,3 +23,4 @@ void main()
      if((year%400==0||(year%4==0&&year%100!=0))&&month>2) 
           sum++;
      printf("It is the %dth day.",sum);
+}
